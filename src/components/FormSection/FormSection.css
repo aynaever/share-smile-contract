@@ -1,0 +1,25 @@
+.formSection {
+	height: 97vh;
+	background-color: #FFB703;
+}
+
+.blockForm {
+	width: 70%;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #FB8500;
+}
+
+#title {
+	margin: 0 auto;
+}
+
+#click {
+	color: #219EBC;
+}
+
+#smile {
+	color: #FB8500;
+}
