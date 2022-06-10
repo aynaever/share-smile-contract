@@ -6,7 +6,7 @@
 						 "image slang";
 }
 
-#mission {
+#mission, .hashtag {
 	color: #219EBC;
 }
 
@@ -17,9 +17,15 @@
 
 .slang {
 	grid-area: slang;
+	text-align: center;
+	align-self: center;
 }
 
 .image {
 	grid-area: image;
 	margin: 0 auto;
+}
+
+.happySmiles {
+	color: #FB8500;
 }
