@@ -15,10 +15,12 @@
 	grid-area: slang;
 	align-self: center;
 	justify-self: center;
+	text-align: center;
 }
 
 .cta {
 	width: 200px;
+	display: block;
 }
 
 .image {

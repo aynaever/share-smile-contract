@@ -12,7 +12,7 @@ function HeroSection() {
 					Blockchain
 					<br />
 				</HeadingChakra>
-				<Button className="cta" colorScheme="orange">Sm😁le Now</Button>
+				<Button className="cta" colorScheme="orange" size="lg">Sm😁le Now</Button>
 			</div>
 			<Image src="/HeroImage.png" className="image"/>
 		</div>
