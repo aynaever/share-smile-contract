@@ -1,0 +1,32 @@
+.navbar {
+	background-color: #023047;
+	color: white;
+	height: 7vh;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar > ul {
+	list-style-type: none;
+	display: inline;
+	margin-left: 3rem;
+}
+
+.navbar > ul > * {
+	display: inline;
+	margin: auto 10px;
+}
+
+.navbar img {
+	display: inline;
+	margin: 0 auto;
+	height: 60px;
+	align-content: center;
+}
+
+.navbar > .button {
+	width: 100px;
+	margin-right: 3rem;
+}
