@@ -6,8 +6,8 @@ function HeroSection() {
 	return (
 		<div className="heroSection">
 			<div className="division">
-				<HeadingChakra as="h1" noOfLines={4} size="3xl" className="slang">
-					Share <HeadingChakra className="love" size="4xl" as="h1">Love</HeadingChakra>
+				<HeadingChakra as="h1" fontSize='5rem' noOfLines={4} size="3xl" className="slang">
+					Share <HeadingChakra className="love" fontSize='8rem' size="4xl" as="h1">Love</HeadingChakra>
 					<br />Now in the <br />
 					Blockchain
 					<br />
