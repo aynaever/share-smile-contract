@@ -2,22 +2,26 @@
 	height: 93vh;
 	background-color: #FFB703;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 2;
+	grid-template-areas: "slang image"
+						 "slang   image";
 }
 
-.heading {
-	grid-column: 1;
+.love {
+	display: inline;
+	color: #FB8500;
+}
+
+.division {
+	grid-area: slang;
 	align-self: center;
 	justify-self: center;
 }
 
-.CallToAction {
-	justify-self: center;
-	align-self: center;
+.cta {
+	width: 200px;
 }
 
 .image {
+	grid-area: image;
 	align-self: center;
-	grid-area: 1 / 2 / 2 / 2;
 }
