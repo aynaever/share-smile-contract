@@ -1,4 +1,5 @@
 import NavbarCss from './Navbar.css';
+import { motion } from "framer-motion";
 import { Button, Link } from '@chakra-ui/react';
 
 function Navbar() {
@@ -11,7 +12,9 @@ function Navbar() {
 				<Link>About</Link>
 			</ul>
 			<img src="/Logo.png" />
-			<Button className="button" colorScheme="orange" size="md">Connect</Button>
+			<motion.div className="button" whileHover={{ scale: 1.1 }}>
+				<Button className="button" colorScheme="orange" size="md">Connect</Button>
+			</motion.div>
 		</div>
 	);
 }

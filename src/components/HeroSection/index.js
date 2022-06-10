@@ -21,7 +21,9 @@ function HeroSection() {
 					Blockchain
 					<br />
 				</HeadingChakra>
-				<Button className="cta" colorScheme="orange" size="lg">Sm😁le Now</Button>
+				<motion.div whileHover={{ scale: 1.3 }}>
+					<Button className="cta" colorScheme="orange" size="lg">Sm😁le Now</Button>
+				</motion.div>
 			</motion.div>
 			<motion.div
 				animate={{ scale : 1, rotate: 0}}
