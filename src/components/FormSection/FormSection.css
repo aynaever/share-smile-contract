@@ -2,6 +2,7 @@
 	height: 97vh;
 	background-color: #FFB703;
 	text-align: center;
+	padding-top: 10vh;
 }
 
 .blockForm {
@@ -11,6 +12,7 @@
 	padding: 20px;
 	border-radius: 20px;
 	background-color: #FB8500;
+	margin-top: 17vh;
 }
 
 #title {
@@ -23,4 +25,8 @@
 
 #smile {
 	color: #FB8500;
+}
+
+.nameInput, .messageInput {
+	margin-bottom: 10px;
 }

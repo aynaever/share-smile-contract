@@ -1,4 +1,5 @@
 import { Heading, Image } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import MissionSectionCss from "./MissionSection.css";
 
 function MissionSection() {
