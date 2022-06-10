@@ -6,9 +6,9 @@ import IndexCss from "./index.css";
 function HeroSection() {
 	return (
 		<div className="heroSection">
-			<Heading />
-			<CallToAction />
-			<Image src="/HeroImage.png" />
+			<Heading className="heading"/>
+			<CallToAction className="CallToAction"/>
+			<Image src="/HeroImage.png" className="image"/>
 		</div>
 	);
 }
