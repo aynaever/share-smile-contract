@@ -1,7 +1,9 @@
+import { Button } from '@chakra-ui/react';
+
 function CallToAction() {
 	return (
 		<>
-			<h1>Call To Action</h1>
+			<Button colorScheme="orange">Sm😁le Now</Button>
 		</>
 	);
 }
