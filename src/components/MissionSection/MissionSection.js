@@ -4,16 +4,16 @@ import MissionSectionCss from "./MissionSection.css";
 function MissionSection() {
 	return (
 		<div className="missionSection">
-			<Heading>
+			<Heading className="headingMission">
 				What is our <span id="mission">Mission</span> ?
 			</Heading>
-			<Heading>
+			<Heading className="slang">
 				We want to paint Happy
 				<br />Smiles on the Faces of
 				<br />Everyone
 				<br />#EveryoneDeservesSmile
 			</Heading>
-			<Image src="/OurMission.png" />
+			<Image className="image" src="/OurMission.png" />
 		</div>
 	);
 }
