@@ -1,6 +1,8 @@
 import { Heading as HeadingChakra} from '@chakra-ui/react';
 import { Image, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { Link } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 import IndexCss from "./index.css";
 
 function HeroSection() {
@@ -22,7 +24,9 @@ function HeroSection() {
 					<br />
 				</HeadingChakra>
 				<motion.div whileHover={{ scale: 1.3 }}>
-					<Button className="cta" colorScheme="orange" size="lg">Sm😁le Now</Button>
+					<Link as={RouterLink} to="/smile-now">
+						<Button className="cta" colorScheme="orange" size="lg">Sm😁le Now</Button>
+					</Link>
 				</motion.div>
 			</motion.div>
 			<motion.div
