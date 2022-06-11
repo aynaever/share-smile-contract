@@ -16,7 +16,7 @@ function App() {
 			<Route path="/" element={<HeroSection /> }/>
 			<Route path="/smiles" element={<SmilesSection /> }/>
 			<Route path="/smile-now" element={<FormSection /> }/>
-			<Route path="/about" element={<About /> }/>
+			<Route path="/about" element={<MissionSection /> }/>
   	  	</Routes>
   	  	<FooterSection />
   	  </BrowserRouter>

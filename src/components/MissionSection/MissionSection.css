@@ -1,6 +1,7 @@
 .missionSection {
 	background-color: #FFB703;
 	display: grid;
+	padding-bottom: 10vh;
 	grid-template-areas: "heading heading"
 						 "image slang";
 }
@@ -11,7 +12,7 @@
 
 .headingMission {
 	grid-area: heading;
-	margin: 0 auto;
+	margin: 10vh auto 0 auto;
 }
 
 .slang {
