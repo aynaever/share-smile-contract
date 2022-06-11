@@ -1,11 +1,12 @@
 import NavbarCss from './Navbar.css';
-import { connectToEthereum } from '../../utils/connectToEthereum.js';
+import { connectToEthereum, isWalletConnected } from '../../utils/connectToEthereum.js';
 import { motion } from "framer-motion";
 import { Button, Link } from '@chakra-ui/react';
+import { useState, useEffect } from "react";
 
 function Navbar() {
 
-	const isConnected = window.ethereum.request({ method : "eth_requestAccounts" }).length !== 0 ? true : false;
+	const [isConnected, setIsConnected] = useState(false);
 
 	return (
 		<div className="navbar">
@@ -22,7 +23,11 @@ function Navbar() {
 						isDisabled={ isConnected }
 						size="md"
 						onClick={async () => {
-									await connectToEthereum();}}>
+								if (!isConnected) {
+									await connectToEthereum();
+									setIsConnected(true);
+								}
+								}}>
 					{ isConnected ? "Connected" : "Connect" }</Button>
 			</motion.div>
 		</div>
