@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 import { Button, Link } from '@chakra-ui/react';
 
 function Navbar() {
+
+	const isConnected = window.ethereum.request({ method : "eth_requestAccounts" }).length !== 0 ? true : false;
+
 	return (
 		<div className="navbar">
 			<ul>
@@ -16,9 +19,11 @@ function Navbar() {
 			<motion.div className="button" whileHover={{ scale: 1.1 }}>
 				<Button	className="button"
 						colorScheme="orange"
+						isDisabled={ isConnected }
 						size="md"
 						onClick={async () => {
-									await connectToEthereum();}}>Connect</Button>
+									await connectToEthereum();}}>
+					{ isConnected ? "Connected" : "Connect" }</Button>
 			</motion.div>
 		</div>
 	);
