@@ -1,5 +1,5 @@
 import { Container, Heading, Button } from "@chakra-ui/react";
-import { getTotalSmiles } from "../../utils/connectToEthereum";
+import { getTotalSmiles, getSmiles } from "../../utils/connectToEthereum";
 import { useEffect, useState } from "react";
 import SmilesSectionCss from "./SmilesSection.css";
 
@@ -9,6 +9,7 @@ function SmilesSection() {
 	useEffect(() => {
 			(async () => {
 				const num = await getTotalSmiles();
+				await getSmiles();
 				setNsmiles(num)})();
 	});
 
@@ -16,12 +17,10 @@ function SmilesSection() {
 		<div className="smilesSection">
 			<Container maxW="4xl">
 				<Heading	pt={20}
+							textAlign={'center'}
 							noOfLines={2}>
-						This Page is under construction!Soon will be live!</Heading>
+						Happy Smiles from Happy People</Heading>
 				<Heading>{nsmiles}</Heading>
-				<Button>
-					get Number of Smiles
-				</Button>
 			</Container>
 		</div>
 	);
