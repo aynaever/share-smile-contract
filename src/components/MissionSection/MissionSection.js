@@ -5,7 +5,9 @@ import MissionSectionCss from "./MissionSection.css";
 function MissionSection() {
 	return (
 		<div className="missionSection">
-			<Heading className="headingMission" fontSize='3rem' as='h1'>
+			<Heading	className="headingMission"
+						fontSize='3rem'
+						as='h1'>
 				What is our <span id="mission">Mission</span> ?
 			</Heading>
 			<Heading className="slang" fontSize='3rem'>

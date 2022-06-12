@@ -3,7 +3,6 @@ import HeroSection from './components/HeroSection';
 import MissionSection from './components/MissionSection/MissionSection';
 import FormSection from './components/FormSection/FormSection';
 import FooterSection from './components/FooterSection/FooterSection';
-import About from './components/AboutSection/AboutSection';
 import SmilesSection from './components/SmilesSeciton/SmilesSection';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
