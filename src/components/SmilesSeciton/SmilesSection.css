@@ -4,3 +4,17 @@
 	padding-bottom: 5vh;
 	height: auto;
 }
+
+.smiles {
+	color: #FB8500;
+}
+
+.happy {
+	color: #219EBC;
+}
+
+.nSmiles {
+	font-size: 7rem;
+	color: #FB5500;
+}
+
