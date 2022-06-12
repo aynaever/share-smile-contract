@@ -9,6 +9,12 @@ function Navbar() {
 
 	const [isConnected, setIsConnected] = useState(false);
 
+	useEffect(() => {
+		(async () => {
+			setIsConnected(await isWalletConnected());
+		})();
+	});
+
 	return (
 		<div className="navbar">
 			<ul>
