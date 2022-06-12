@@ -1,4 +1,6 @@
 .smilesSection {
 	background-color: #FFB703;
-	height: 90vh;
+	min-height: 93vh;
+	padding-bottom: 5vh;
+	height: auto;
 }
