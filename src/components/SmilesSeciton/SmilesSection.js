@@ -49,7 +49,7 @@ function SmilesSection() {
 				(async () => {
 					const num = await getTotalSmiles();
 					const arraySmiles = await getSmiles();
-					setSmiles(await getSmiles());
+					setSmiles(arraySmiles);
 					setNsmiles(num)})();
 			} catch (error) {
 				console.log(error);

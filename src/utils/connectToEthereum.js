@@ -44,7 +44,7 @@ export async function getTotalSmiles() {
 		console.log(totalSmiles.toNumber());
 		return totalSmiles.toNumber();
 	} catch (error) {
-		console.log("error in getting smiles");
+		throw "error in getting smiles";
 	}
 }
 
