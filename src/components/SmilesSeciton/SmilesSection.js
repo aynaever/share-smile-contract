@@ -45,10 +45,14 @@ function SmilesSection() {
 	});
 
 	useEffect(() => {
-			(async () => {
-				const num = await getTotalSmiles();
-				setSmiles(await getSmiles());
-				setNsmiles(num)})();
+			try {
+				(async () => {
+					const num = await getTotalSmiles();
+					setSmiles(await getSmiles());
+					setNsmiles(num)})();
+			} catch (error) {
+				console.log(error);
+			}
 	}, []);
 
 	return (

@@ -42,7 +42,7 @@ export async function getTotalSmiles() {
 		console.log(totalSmiles.toNumber());
 		return totalSmiles.toNumber();
 	} catch (error) {
-		console.log(error);
+		throw	new Error('FailConnect');
 	}
 }
 
