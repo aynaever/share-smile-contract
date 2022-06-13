@@ -44,7 +44,7 @@ export async function getTotalSmiles() {
 		console.log(totalSmiles.toNumber());
 		return totalSmiles.toNumber();
 	} catch (error) {
-		throw	new Error('FailConnect');
+		console.log("error in getting smiles");
 	}
 }
 
@@ -53,7 +53,7 @@ export async function getSmiles() {
 		const addressContract = address;
 		const provider = new ethers.providers.Web3Provider(window.ethereum);
 		const contract = new ethers.Contract(addressContract, abi.abi, provider);
-		let smiles = await contract.getSmiles();
+		const smiles = await contract.getSmiles();
 		console.log(smiles);
 		return smiles;
 	} catch (error) {
