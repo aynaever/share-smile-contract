@@ -4,8 +4,9 @@ Share Smile Web Application let you interact with **Share Smile Smart Contract**
 
 ## Table of contents
 * [What I used?](#whatiused)
+* [Contributing](#Contributing)
 
-### What I used?
+## What I used?
 * [React](https://reactjs.org/)
 * [Framer Motion](https://www.framer.com/motion/)
 * [Ethers.js](https://docs.ethers.io/v5/)
