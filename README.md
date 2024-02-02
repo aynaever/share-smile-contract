@@ -9,3 +9,6 @@ Share Smile Web Application let you interact with **Share Smile Smart Contract**
 * [React](https://reactjs.org/)
 * [Framer Motion](https://www.framer.com/motion/)
 * [Ethers.js](https://docs.ethers.io/v5/)
+
+## Contributing
+Make a pull request to contribute to the project, simple as that.
